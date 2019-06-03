@@ -3,11 +3,11 @@
 spring:
   application:
     name: service-one
-  rabbitmq:
-    port: 5762
-    username: guest
-    password: guest
-    host: 127.0.0.1
+  #rabbitmq:
+   # port: 5762
+    #username: guest
+    #password: guest
+    #host: 127.0.0.1
   cloud:
     bus:
       enabled: true
