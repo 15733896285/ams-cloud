@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: amscloud-gateway
+server:
+  port: 7979
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+zuul:
+  routes:
+    ams:
+      path: /ams/**
+      serviceId: amscloud-provider-ams
+
+    amsapi:
+      path: /amsapi/**
+      serviceId: amscloud-adapter-amsapi
+feign:
+  hystrix:
+    enabled: true
