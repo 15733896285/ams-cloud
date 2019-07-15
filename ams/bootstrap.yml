@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: amscloud-provider-ams
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    enabled: true
+    sampler:
+      percentage: 1
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
