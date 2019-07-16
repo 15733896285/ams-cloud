@@ -1,0 +1,16 @@
+server:
+  port: 8989
+spring:
+  application:
+    name: hystrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+turbine:
+  combine-host-port: true
+  app-config: AMSCLOUD-ADAPTER-AMSAPI,AMSCLOUD-PROVIDER-AMS
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String('default')
+  instanceUrlSuffix: /manage/hystrix.stream
