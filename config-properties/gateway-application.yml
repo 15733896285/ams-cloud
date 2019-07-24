@@ -20,4 +20,4 @@ feign:
   hystrix:
     enabled: true
 test:
-  hello: hello word
+  hello: hello word111
