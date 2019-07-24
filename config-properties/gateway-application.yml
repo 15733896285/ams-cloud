@@ -19,4 +19,5 @@ zuul:
 feign:
   hystrix:
     enabled: true
-test.hello : hello word
+test:
+  hello: hello word
