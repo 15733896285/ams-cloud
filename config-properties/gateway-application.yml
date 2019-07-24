@@ -2,7 +2,7 @@ spring:
   application:
     name: amscloud-gateway
 server:
-  port: 79799
+  port: 7979
 eureka:
   client:
     serviceUrl:
