@@ -2,7 +2,7 @@ spring:
   application:
     name: amscloud-gateway
 server:
-  port: 7979
+  port: 79799
 eureka:
   client:
     serviceUrl:
@@ -19,3 +19,4 @@ zuul:
 feign:
   hystrix:
     enabled: true
+test.hello : hello word
